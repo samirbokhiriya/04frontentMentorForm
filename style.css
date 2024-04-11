@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+   /*Primary*/
+
+--Red: hsl(0, 100%, 74%);
+--Green: hsl(154, 59%, 51%);
+
+/*Accent*/
+
+--Blue: hsl(248, 32%, 49%);
+
+/*Neutral*/
+
+--DarkBlue: hsl(249, 10%, 26%);
+--GrayishBlue: hsl(246, 25%, 77%);
+}
+
+*{
+    padding:0;
+    margin:0;
+    font-family:'Poppins',sans-serif;
+}
+.box{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: url(images/bg-intro-desktop.png);
+    background-color:var(--Red);
+}
+span{
+    position: absolute;
+    right:3vw;
+    height: 20px;
+    width: auto;
+    color:var(--Red);
+    font-size: .8rem;
+    display: block;
+    margin-bottom:20px ;
+}
+.containerRight{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40vw;
+    min-width:250px;
+    max-width:500px;
+    
+}
+.top{
+    background-color: var(--Blue);
+    margin:10px 0;
+    padding:10px 0;
+    border-radius:5px;
+    width:100%;
+    color:white;
+    text-align: center;
+
+}
+.down{
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.274);
+}
+button{
+    width: 90%;
+    padding:10px;
+    background-color: var(--Green);
+    border:none;
+    color:white;
+    font-weight: 400;
+    border-radius: 5px;
+    margin-top: 25px;
+
+}button:hover{
+    background-color: hsl(154, 100%, 47%);
+}
+.containerLeft{
+    min-width: 40vw;
+    max-width: 40vw;
+
+}
+svg{
+    position: absolute;
+    margin-top:5.5vh;
+    right:3.2vw;
+    z-index: 1;
+    display: none;
+}
+
+input{
+    padding:10px;
+    width:80%;
+    margin-bottom: 5px;
+    margin-top:25px;
+    min-width:150px;
+    background-color: white;
+    border:1px solid var(--Red);
+    border-radius: 3px;
+    font-weight: 500;
+    position: relative;
+}
+::placeholder{
+    font-weight: 600;
+}
+
+p{
+    font-size: .7rem;
+    padding:10px;
+}
+.error-icon {
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+}
+h1{
+    color:white;
+    line-height: 2rem;
+    margin-top:30px;
+}
+.under{
+    font-size: .9rem;
+}
+@media screen and (max-width:668px){
+
+    .box{
+        text-align: center;
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: url(images/bg-intro-mobile.png);
+    background-color:var(--Red);
+}
+::placeholder{
+    font-weight:600;
+}
+.attribution{
+    color:black;
+}
+
+.containerRight{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width:300px;
+    max-width:500px;
+    margin-bottom:50px;
+
+}
+.top{
+    background-color: var(--Blue);
+    margin:10px 0;
+    padding:10px 0;
+    border-radius:5px;
+    width:100%;
+    color:white
+}
+.down{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.274);
+
+}
+button{
+    width: 90%;
+    padding:10px;
+    background-color: var(--Green);
+    border:none;
+    color:white;
+    font-weight: 400;
+    border-radius: 5px;
+
+}
+.containerLeft{
+    min-width: 90vw;
+    max-width: 90vw;
+    line-height: 1rem;
+
+}
+input{
+    padding:10px;
+    width:80%;
+    min-width:150px;
+    margin-bottom: 5px;
+    margin-top:25px;
+    background-color: white;
+    border:1px solid var(--Red);
+    border-radius: 3px;
+}
+p{
+    font-size: .7rem;
+    padding:10px;
+    color:white;
+}
+h1{
+    color:white;
+    line-height: 2rem;
+    text-align: center;
+    color:white
+}
+.under{
+    font-size: .9rem;
+}
+.containerRight p{
+    color:black;
+}
+span{
+    position: absolute;
+    right:4.3vw;
+    height: 20px;
+    width: auto;
+    color:var(--Red);
+    font-size: .8rem;
+    display: block;
+    margin-bottom:20px ;
+}
+svg{
+    position: absolute;
+    margin-top:5.2vh;
+    right:6vw;
+    z-index: 1;
+    display: none;
+}
+
+}
